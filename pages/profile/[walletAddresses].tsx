@@ -29,7 +29,7 @@ export default function Profile(){
                 <div className={styles.grid}>
                     {!isOwnedNftsLoading ? (
                         ownedNfts?.length! > 0 ? (
-                            ownedNfts.map((nft) => (
+                            ownedNfts?.map((nft) => (
                               <div key={nft.metadata.id} className={styles.NFTCard}>
                                 <ThirdwebNftMedia
                                 metadata={nft.metadata}
